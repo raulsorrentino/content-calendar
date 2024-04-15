@@ -10,5 +10,5 @@ CREATE TABLE IF NOT EXISTS Content (
 	primary key (id)
 );
 
-INSERT INTO Content(title, desc, status, content_type, date_created)
-VALUES ('My first blog post', 'My first blog post description', 'IDEA', 'ARTICLE', CURRENT_TIMESTAMP);
+--INSERT INTO Content(title, desc, status, content_type, date_created)
+--VALUES ('My first blog post', 'My first blog post description', 'IDEA', 'ARTICLE', CURRENT_TIMESTAMP);
