@@ -2,6 +2,7 @@ package com.raulsorrentino.contentcalendar.controller;
 
 import com.raulsorrentino.contentcalendar.model.Content;
 import com.raulsorrentino.contentcalendar.repository.ContentCollectionRepository;
+import com.raulsorrentino.contentcalendar.repository.ContentJdbcTemplateRepository;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -14,7 +15,9 @@ import java.util.List;
 @CrossOrigin
 public class ContentController {
 
-    private final ContentCollectionRepository repository;
+//    private final ContentCollectionRepository repository;
+
+    private final ContentJdbcTemplateRepository repository;
 
     public ContentController(ContentCollectionRepository repository) {
         this.repository = repository;
